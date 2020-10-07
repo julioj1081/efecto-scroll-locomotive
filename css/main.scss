@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+section{
+    height: 100vh;
+    padding: clamp(5em, 5vw, 10em);
+
+    h1{
+        letter-spacing: 2px;
+        font-size: clamp(1.8rem, 2vw, 4rem);
+    }
+    p{
+        line-height: 1.5;
+        font-size: max(1.2rem, 1.2vw);
+    }
+
+    //section hijos
+    &:first-child{
+        background:#ffffff;
+        color: white;
+    }
+
+    &:last-child{
+        background: rgb(31, 37, 43);
+        color: white;
+    }
+
+}
+.custom-p{
+    opacity: 0;
+    transition: opacity 6s;
+}
+.scroll-class{
+    opacity: 1;
+}

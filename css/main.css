@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+section {
+  height: 100vh;
+  padding: clamp(5em, 2.5vw, 10em);
+}
+
+section h1 {
+  font-size: clamp(2em, 2.5vw, 5em);
+}
+
+section p {
+  font-size: clamp(1.5em, 5vw, 3em);
+}
+
+section:first-child {
+  background: #5200f3;
+  color: white;
+}
+
+section:last-child {
+  background: #1f252b;
+  color: white;
+}
+
+.custom-p {
+  opacity: 0;
+  -webkit-transition: opacity 6s;
+  transition: opacity 6s;
+}
+
+.scroll-class {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
